@@ -1,0 +1,42 @@
+.menu{
+    display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid gray;
+    width: 150px;
+    .item1{
+        padding: 5px;
+        border: 1px solid gray;
+        div{
+            display: inline-block;
+            margin-left: 55px;
+            background-color: yellow;
+            border: 1px solid gray;
+            width: 28px;
+            height: 14px;
+        }
+    }
+    .item2{
+        padding: 5px;
+        border: 1px solid gray;
+        div{
+            display: inline-block;
+            margin-left: 65px;
+            background-color: olive;
+            border: 1px solid gray;
+            width: 28px;
+            height: 14px;
+        }
+    }
+    .item3{
+        padding: 5px;
+        border: 1px solid gray;
+        div{
+            display: inline-block;
+            margin-left: 57px;
+            background-color: brown;
+            border: 1px solid gray;
+            width: 28px;
+            height: 14px;
+        }
+    }
+}
