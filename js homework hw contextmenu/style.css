@@ -1,42 +1,43 @@
 .menu{
+    position: absolute;
     display: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 1px solid gray;
-    width: 150px;
-    .item1{
-        padding: 5px;
+    padding: 10px;
+    border: 2px solid gray;
+    background-color: gainsboro; 
+}
+
+.item{ 
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+}
+
+.col1{
+        margin-left: 25px;
+        display: inline-block;
+        background-color: brown;
         border: 1px solid gray;
-        div{
-            display: inline-block;
-            margin-left: 55px;
-            background-color: yellow;
-            border: 1px solid gray;
-            width: 28px;
-            height: 14px;
-        }
-    }
-    .item2{
-        padding: 5px;
+        width: 25px;
+        height: 10px;
+}
+
+.col2{
+        margin-left: 25px;
+        display: inline-block;
+        background-color: olive;
         border: 1px solid gray;
-        div{
-            display: inline-block;
-            margin-left: 65px;
-            background-color: olive;
-            border: 1px solid gray;
-            width: 28px;
-            height: 14px;
-        }
-    }
-    .item3{
-        padding: 5px;
+        width: 25px;
+        height: 10px;
+}
+
+.col3{
+        margin-left: 25px;
+        display: inline-block;
+        background-color: yellow;
         border: 1px solid gray;
-        div{
-            display: inline-block;
-            margin-left: 57px;
-            background-color: brown;
-            border: 1px solid gray;
-            width: 28px;
-            height: 14px;
-        }
-    }
+        width: 25px;
+        height: 10px;
 }

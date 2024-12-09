@@ -68,3 +68,5 @@ function om(){
     
     setInterval(deleteEl, 1000)
 }
+
+
