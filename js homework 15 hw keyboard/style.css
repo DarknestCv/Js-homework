@@ -1,8 +1,12 @@
-.p{
+.span{
     font-family: cursive;
-    font-size: 25px;
+    /* font-size: 5px; */
 }
 
 .osn{
     text-align: center;
+}
+
+.wrong{
+    display: inline;
 }
