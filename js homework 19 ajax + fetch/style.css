@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+    border: 1px solid rgb(78, 71, 71);
+    opacity: 85%;
+    border-radius: 3px;
+    background-color: olive;
+    color: white;
+    font-family: fantasy;
+    font-size: 20px;
+    transition-duration: 0.7s;
+}
+button:hover{
+    transform: scale(1.1);
+    color: blueviolet;
+}
