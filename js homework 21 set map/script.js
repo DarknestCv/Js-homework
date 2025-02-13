@@ -1,14 +1,15 @@
 // ! 1
 
 arr = [1,23,6,23,23,5423,23,3,5,5,5,5,2,3,54,1,1,3,4]
-const f = (arr) =>{
-    let s  = new Set(arr)
-    console.log(s)
+const f = (mas) =>{
+    let s  = new Set(mas)
+    newar = [s]
+    return console.log(newar)
 }
 f(arr)
 
 
-// ! 2
+! 2
 
 const f2 = (...numbers) => {
     numbers.sort((a, b) => a - b);

@@ -24,30 +24,59 @@
 // })
 
 // ! 3
-const ilyhaprom = (callback) =>{
-    return new Promise ((resolve, reject) => {
-        const result = callback();
+// const ilyhaprom = (callback) =>{
+//     return new Promise ((resolve, reject) => {
+//         const result = callback();
 
-        if(result > 1) {
-            console.log('Processor overload')
-            reject()
-        }else{
-            console.log(result)
-            console.log('Task done')
-            resolve()
-        }
-    }
-)
-}
+//         if(result > 1) {
+//             console.log('Processor overload')
+//             reject()
+//         }else{
+//             console.log(result)
+//             console.log('Task done')
+//             resolve()
+//         }
+//     }
+// )
+// }
 
-ilyhaprom(() =>{
-    return Math.floor(Math.random() * 2) + 1
-})
-.then(() =>{
-    console.log('Promise done')
-})
-.catch(() =>{
-    console.log('Promise failed')
-})
+// ilyhaprom(() =>{
+//     return Math.floor(Math.random() * 2) + 1
+// })
+// .then(() =>{
+//     console.log('Promise done')
+// })
+// .catch(() =>{
+//     console.log('Promise failed')
+// })
 
 // ! 4
+// const ilyhaprom = (callback) =>{
+//     return new Promise ((resolve, reject) => {
+//         const result = callback();
+
+//         if(result > 1) {
+//             console.log(result)
+//             console.log('Processor overload')
+//             reject()
+//         }else{
+//             console.log(result)
+//             console.log('Task done')
+//             resolve()
+//         }
+//     }
+// )
+// }
+
+// const runTask = async () => {
+//     try {
+//         await ilyhaprom(() => {
+//             return Math.floor(Math.random() * 2) + 1;
+//         });
+//         console.log('Promise done');
+//     } catch {
+//         console.log('Promise failed');
+//     }
+// }
+
+// runTask()
