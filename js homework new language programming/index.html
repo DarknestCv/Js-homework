@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Міні мова програмування</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    pre, textarea {
+      height: 300px;
+      width: 350px;
+      background-color: cadetblue;
+      color: white;
+      padding: 20px;
+      font-size: 18px;
+      overflow-y: auto;
+      border-radius: 5px;
+      white-space: pre-wrap;
+    }
+    button {
+      background-color: #5cb85c;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+    button:hover {
+      background-color: #4cae4c;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h2>Напишіть код вашою мовою програмування:</h2>
+    <textarea id="code">create a = 5
+create b = 10
+message('hello')</textarea>
+
+    <button id="compile">Скомпілювати</button>
+
+    <h2>Перетворений код JavaScript:</h2>
+    <pre id="js"></pre>
+  </div>
+
+  <script>
+    const compileButton = document.getElementById('compile');
+    const codeElement = document.getElementById('code');
+    const jsElement = document.getElementById('js');
+
+    compileButton.onclick = function() {
+      let compileCode = codeElement.value;
+
+      // Заміна ключових слів
+      compileCode = compileCode.replace(/\bcreate\b/g, 'let'); // "create" на "let"
+      compileCode = compileCode.replace(/\bmessage\b/g, 'alert'); // "message" на "alert"
+
+      // Виведення перетвореного коду
+      jsElement.textContent = compileCode;
+
+      try {
+        // Виконання перетвореного коду
+        eval(compileCode);
+      } catch (error) {
+        jsElement.textContent = `Помилка: ${error.message}`;
+      }
+    };
+  </script>
+
+</body>
+</html>
